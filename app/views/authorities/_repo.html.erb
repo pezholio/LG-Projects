@@ -1,2 +1,23 @@
 <h3><%= link_to repo['name'], repo['html_url'] %></h3>
 <p><%= repo['description'] %></p>
+
+<%
+  begin
+    civic = open("https://raw.githubusercontent.com/#{repo['full_name']}/master/civic.json").read
+    json = JSON.parse(civic)
+  rescue OpenURI::HTTPError
+    nil
+  end
+%>
+
+<% if json %>
+  <p><strong>Status:</strong> <span class="label label-primary"><%= json['status'] %></span></p>
+  <p><strong>Owner:</strong> <span class="label label-success"><%= json['owner']['name'] %></span></p>
+  <p><strong>Service Categories:</strong>
+      <% json['serviceCategories'].each do |s| %>
+        <span class="label label-success"><%= s['name'] %></span>
+      <% end %>
+  </p>
+
+
+<% end %>
