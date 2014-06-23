@@ -5,3 +5,10 @@ services: mongodb
 env:
   global:
     secure: eYpjRmaWg+P38b6CscvqXlHNx2ob4TS/UkR4+yIHIG3AMQ7XYutUFZxKu1/GRpz+qpPP/NrIYr5WCwYf92drDijGHEIRlAqOMcJ1wOZ/gTX0Y5vPETFCVi9zzulB5eOnl6aQZtM2NOXPwSzm09ca91bFVoTU2Tozk0oBrNWV5Kg=
+deploy:
+  provider: heroku
+  api_key:
+    secure: Fzj8ymsWNGZLDs8TDxGePIcTtXmGC85r9gFimAjB4fXKyUDLRoaTykBcp9SFC31lOSSUzRWCtqzoz2ztNzYQSY04dWhE2MbkBSkKkBBQic47mAtu9ZKkyV4H+d6XA++qY42/aDwA+X4Mk9cw87lhXEkIlE6gjC1oOskT0MT4p9c=
+  app: lgprojects
+  on:
+    repo: pezholio/LG-Projects
