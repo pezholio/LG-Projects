@@ -1,0 +1,369 @@
+# Official government institutions, listed under their country or level of government
+
+Argentina:
+  - gcba
+
+Australia:
+  - actgov
+  - datagovau
+  - dpaw2
+  - ga-m3dv
+  - GeoscienceAustralia
+  - Healthway
+  - innovationgovau
+  - Landgate
+  - museumvictoria
+  - nla
+  - nmalabs
+  - qld-gov-au
+  - srep
+  - srnsw
+  - wamuseum
+
+Belgium:
+  - belgianpolice
+  - onroerenderfgoed
+
+Bolivia:
+  - geobolivia
+
+Brazil:
+  - cislgov
+  - dadosgovbr
+  - gabinetedigital
+  - interlegis
+  - lexml
+  - plonegovbr
+  - pr-snas
+  - prefeiturasp
+  - PROCERGS
+  - secom-tocantins
+
+Canada:
+  - AAFC-MBB
+  - ca-canada
+  - CIHR
+  - cityofgreatersudbury
+  - cityofottawa
+  - electionsquebec
+  - GeoCanViz
+  - MetropolitanTransportationCommission
+  - nrc-cnrc
+  - NRCan
+  - nsgov
+  - open-data
+  - pwgsc
+  - RAMP-RACP
+  - ServiceCanada
+  - wet-boew
+
+Chile:
+  - e-gob
+
+Colombia:
+  - idu-bogota
+
+Estonia:
+  - vvk-ehk
+
+European Union:
+  - europeana
+
+Finland:
+  - avoinministerio
+  - City-of-Helsinki
+  - HSLdevcom
+  - Lounaispaikka
+
+France:
+  - afimb
+  - ANSSI-FR
+  - communaute-cimi
+  - erasme
+  - etalab
+  - VilleDeMontpellier
+
+Germany:
+  - gbv
+  - lobid
+
+International:
+  - IATI
+  - ogpl
+  - rOpenGov
+
+Isle of Man:
+  - Isle-Of-Man-Government
+
+Mexico:
+  - CSB-IG
+  - DDT-INMEGEN
+
+New Zealand:
+  - CanterburyRegionalCouncil
+  - linz
+
+Norway:
+  - difi
+  - dss-web
+  - kartverket
+
+Peru:
+  - imarpe
+
+Philippines:
+  - govph
+
+Puerto Rico:
+  - commonwealth-of-puerto-rico
+
+Saudi Arabia:
+  - SAS-NCDC
+
+Spain:
+  - ctt-gob-es
+
+Sweden:
+  - edelegationen
+  - libris
+  - malmostad
+  - rinfo
+  - The-Municipality-of-Staffanstorp
+
+Switzerland:
+  - alv-ch
+  - ogdch
+
+Tasmania:
+  - gccgisteam
+
+U.S. City:
+  - Baltimore-City-EGIS
+  - berkeleypubliclibrary
+  - cambridgegis
+  - chicago
+  - city-of-bellingham
+  - city-of-bloomington
+  - City-of-Raleigh-Public-Utilities
+  - cityofasheville
+  - CityOfAuburnAL
+  - CityOfBoston
+  - cityofboulder
+  - cityofchattanooga
+  - cityoffortworth
+  - cityofnewyork
+  - CityOfPhiladelphia
+  - CityofReno
+  - CityofSantaMonica
+  - CityOfVirginiaBeach
+  - CityofYakima
+  - cocdata
+  - CORaleigh
+  - CUMTD
+  - DCCouncil
+  - DenverDev
+  - egovpdx
+  - Honolulu
+  - lfucg
+  - mnhrc
+  - monum
+  - NYCComptroller
+  - octolabs
+  - OpenGovDC
+  - openlexington
+  - SantaClarita
+  - sfbart
+  - sfgov
+  - tucsonaz
+
+U.S. County:
+  - ArlingtonCounty
+  - baltimorecounty
+  - miamidade
+  - sfcta
+  - SJCGIS
+  - slugis
+
+U.S. Research Labs:
+  - ACME-Climate
+  - ARM-DOE
+  - BrookhavenNationalLaboratory
+  - CASL
+  - CBIIT
+  - EMSL-MSC
+  - epicsdeb
+  - exmatex
+  - globus
+  - HipGISAXS
+  - hpde
+  - idaholab
+  - JGI-Bioinformatics
+  - LANL-Bioinformatics
+  - lbl-anp
+  - lblpbd
+  - libmesh
+  - losalamos
+  - materialsproject
+  - mdhim
+  - MG-RAST
+  - NASA-Tensegrity-Robotics-Toolkit
+  - NIAID-RTB
+  - NIFA
+  - nih-fmrif
+  - nimh-nif
+  - nist-ionstorage
+  - NSLS-II
+  - NSLS-II-CSX
+  - olcf
+  - OpsLabJPL
+  - ORNL
+  - ORNL-BTRIC
+  - ORNL-CEES
+  - ornl-sava
+  - ORNL-TechInt
+  - ornlcda
+  - PCMDI
+  - plfs
+  - PNNL-Comp-Mass-Spec
+  - pyepics
+  - reflectometry
+  - sandialabs
+  - scalability-llnl
+  - scattering
+  - simx
+  - TinyTitan
+  - UV-CDAT
+  - zfsonlinux
+
+U.S. Special District:
+  - atlregional
+  - cleveland-metroparks
+  - CMAP-REPOS
+  - psrc
+
+U.S. States:
+  - agrc
+  - azgs
+  - ccap
+  - CTOpenData
+  - idahofishgame
+  - InDEM
+  - NJOGIS
+  - nys-its
+  - nysenate
+  - ORMetro
+  - SLNC-DIMP
+  - State-of-Arizona
+  - tndcs
+  - TNRIS
+  - twdb
+  - TxDOT
+  - UtahForestryFireStateLands
+  - Virginia-House-of-Delegates
+  - wsdot
+  - WSDOT-GIS
+
+United Kingdom:
+  - GuildfordBC
+  - lichfield-district-council
+
+United States:
+  - 18f
+  - adlnet
+  - arcticlcc
+  - BBGInnovate
+  - blue-button
+  - CA-CST-SII
+  - cfpb
+  - chaos
+  - cmsgov
+  - cocomans
+  - commercegov
+  - cooperhewitt
+  - department-of-veterans-affairs
+  - educationdatainitiative
+  - EEOC
+  - energyapps
+  - erdc-cm
+  - eregs
+  - fcc
+  - fccdata
+  - fda
+  - Federal-Aviation-Administration
+  - foreignassistance
+  - globegit
+  - gopleader
+  - government-services
+  - gsa
+  - hhs
+  - HHSIDEAlab
+  - historyatstate
+  - hpc
+  - info-sharing-environment
+  - informaticslab
+  - Innovation-Toolkit
+  - ioos
+  - IRSgov
+  - JBEI
+  - kbase
+  - libraryofcongress
+  - mcc-gov
+  - nasa
+  - nasa-gibs
+  - nasajpl
+  - NationalGuard
+  - nationalparkservice
+  - ncats
+  - ncbi
+  - ncbitools
+  - ncip
+  - NCPP
+  - NCRN
+  - NeoGeographyToolkit
+  - NERSC
+  - ngageoint
+  - ngds
+  - nhlbi
+  - NIST-BWS
+  - NIST-ICS-SEC-TB
+  - NISTDeepZoom
+  - NMML
+  - NOAA-ORR-ERD
+  - nrel
+  - NREL-cookbooks
+  - opengovplatform
+  - ozoneplatform
+  - peacecorps
+  - portofsandiego
+  - presidential-innovation-fellows
+  - project-interoperability
+  - project-open-data
+  - redhawksdr
+  - shareandprotect
+  - Smithsonian
+  - state-hiu
+  - sunpy
+  - usagov
+  - usaid
+  - usasearch
+  - usda
+  - USDA-ERS
+  - usdepartmentoflabor
+  - USDeptVeteransAffairs
+  - usepa
+  - USGCRP
+  - usgin-models
+  - usgs
+  - USGS-CIDA
+  - USGS-OWI
+  - USGS-R
+  - usinterior
+  - usnationalarchives
+  - usnistgov
+  - USPS
+  - usstatedept
+  - VHAINNOVATIONS
+  - virtual-world-framework
+  - visionworkbench
+  - WFMRDA
+  - whitehouse

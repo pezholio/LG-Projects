@@ -37,6 +37,13 @@ gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails", github: "seyhunak/twitter-bootstrap-rails", branch: "bootstrap3"
 
+group :test do
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'database_cleaner'
+  gem 'pry'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
