@@ -36,6 +36,7 @@ gem 'dotenv-rails'
 gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails", github: "seyhunak/twitter-bootstrap-rails", branch: "bootstrap3"
+gem 'mongoid_slug'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'
