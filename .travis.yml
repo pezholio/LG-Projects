@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+- 2.1.0
+services: mongodb
+env:
+  global:
+    secure: eYpjRmaWg+P38b6CscvqXlHNx2ob4TS/UkR4+yIHIG3AMQ7XYutUFZxKu1/GRpz+qpPP/NrIYr5WCwYf92drDijGHEIRlAqOMcJ1wOZ/gTX0Y5vPETFCVi9zzulB5eOnl6aQZtM2NOXPwSzm09ca91bFVoTU2Tozk0oBrNWV5Kg=
