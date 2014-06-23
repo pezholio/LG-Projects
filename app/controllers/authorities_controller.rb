@@ -1,11 +1,11 @@
 class AuthoritiesController < ApplicationController
 
   def index
-    @authorities = Authorities.all
+    @authorities = Authority.all
   end
 
   def show
-    @authority = Authorities.new(params[:id])
+    @authority = Authority.find(params[:id])
   end
 
 end

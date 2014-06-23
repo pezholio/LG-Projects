@@ -10,7 +10,9 @@
 <div class="row">
 
   <% @authority.repos.each do |r| %>
-    <%= render partial: "repo", locals: { repo: r } %>
+    <div class="repo">
+      <%= render partial: "repo", locals: { repo: r } %>
+    </div>
   <% end %>
 
 </div>

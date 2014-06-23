@@ -43,6 +43,9 @@ group :test do
   gem 'webmock'
   gem 'database_cleaner'
   gem 'pry'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+  gem 'launchy'
 end
 
 # Use ActiveModel has_secure_password
