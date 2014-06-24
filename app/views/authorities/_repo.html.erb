@@ -1,18 +1,28 @@
-<h3><%= link_to repo.name, repo.url %></h3>
-<p><%= repo.description %></p>
+<div class="media repo">
+  <h3><%= link_to repo.name, repo.url %></h3>
 
-<% if repo.civic_present? %>
-  <%= image_tag(repo.thumbnail, height: 150) unless repo.thumbnail.nil? %>
-  <p><strong>Status:</strong> <span class="label label-primary"><%= repo.status %></span></p>
-  <p><strong>Owner:</strong> <span class="label label-success"><%= repo.owner['name'] %></span></p>
-  <p><strong>Service Categories:</strong>
-      <% repo.service_categories.each do |s| %>
-        <span class="label label-success"><%= s['name'] %></span>
+  <%= image_tag repo.thumbnail, height: 100, alt: repo.name, class: "pull-left" unless repo.thumbnail.blank? %>
+
+  <div class="media-body">
+    <p><%= repo.description %></p>
+
+    <% if repo.civic_present? %>
+      <p><strong>Status:</strong> <span class="label label-primary"><%= repo.status %></span></p>
+      <p><strong>Owner:</strong> <span class="label label-success"><%= repo.owner['name'] %></span></p>
+      <% if repo.service_categories.length > 0 %>
+        <p><strong>Service Categories:</strong>
+            <% repo.service_categories.each do |s| %>
+              <span class="label label-success"><%= s['name'] %></span>
+            <% end %>
+        </p>
       <% end %>
-  </p>
-  <p><strong>Technologies:</strong>
-      <% repo.technologies.each do |t| %>
-        <span class="label label-success"><%= t['name'] %></span></p>
-      <% end %>
-  </p>
-<% end %>
+      <p><strong>Technologies:</strong>
+          <% repo.technologies.each do |t| %>
+            <span class="label label-success"><%= t['name'] %></span></p>
+          <% end %>
+      </p>
+    <% end %>
+
+  </div>
+
+</div>
