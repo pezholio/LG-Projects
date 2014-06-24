@@ -37,7 +37,6 @@ gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails", github: "seyhunak/twitter-bootstrap-rails", branch: "bootstrap3"
 gem 'mongoid_slug'
-gem 'unicorn'
 gem 'delayed_job_mongoid'
 
 group :test do
@@ -48,6 +47,11 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'launchy'
+end
+
+group :production do
+  gem 'unicorn'
+  gem 'rails_12factor'
 end
 
 # Use ActiveModel has_secure_password
