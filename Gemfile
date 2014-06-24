@@ -38,12 +38,12 @@ gem "less-rails"
 gem "twitter-bootstrap-rails", github: "seyhunak/twitter-bootstrap-rails", branch: "bootstrap3"
 gem 'mongoid_slug'
 gem 'unicorn'
+gem 'delayed_job_mongoid'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'vcr'
   gem 'webmock'
-  gem 'database_cleaner'
   gem 'pry'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'

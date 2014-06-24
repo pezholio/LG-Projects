@@ -3,14 +3,19 @@ require 'open-uri'
 namespace :import do
   desc "Imports all authorities"
   task :authorities  => :environment do
-    users = Import.load_authorities
-    users.each do |u|
-      Import.import_authority(u)
-    end
+    Import.perform
   end
 end
 
 class Import
+
+  def self.perform
+    users = Import.load_authorities
+    users.each do |u|
+      Import.import_authority(u)
+    end
+    Delayed::Job.enqueue Import, run_at: 1.day.from_now
+  end
 
   def self.load_authorities
     url = "https://raw.githubusercontent.com/github/government.github.com/gh-pages/_data/governments.yml"

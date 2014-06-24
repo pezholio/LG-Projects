@@ -10,6 +10,8 @@ deploy:
   api_key:
     secure: Fzj8ymsWNGZLDs8TDxGePIcTtXmGC85r9gFimAjB4fXKyUDLRoaTykBcp9SFC31lOSSUzRWCtqzoz2ztNzYQSY04dWhE2MbkBSkKkBBQic47mAtu9ZKkyV4H+d6XA++qY42/aDwA+X4Mk9cw87lhXEkIlE6gjC1oOskT0MT4p9c=
   app: lgprojects
-  run: "rake import:authorities"
+  run:
+    - "rails runner 'Delayed::Backend::Mongoid::Job.create_indexes'"
+    - "rake import:authorities"
   on:
     repo: pezholio/LG-Projects
