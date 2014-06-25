@@ -4,7 +4,9 @@
   <%= image_tag repo.thumbnail, height: 100, alt: repo.name, class: "pull-left" unless repo.thumbnail.blank? %>
 
   <div class="media-body">
-    <p><%= repo.description %></p>
+    <% unless repo.description.blank? %>
+      <p><%= repo.description %></p>
+    <% end %>
 
     <% if repo.civic_present? %>
       <p><strong>Status:</strong> <span class="label label-primary"><%= repo.status %></span></p>

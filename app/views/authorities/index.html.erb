@@ -5,7 +5,7 @@
 
   <% @authorities.each do |a| %>
     <div class="media">
-      <%= link_to image_tag(a.avatar, width: 64, height: 64, alt: a.name), authority_path(a), class: "pull-left" %>
+      <%= link_to image_tag(a.avatar, width: 64, height: 64, alt: a.name), authority_path(a), class: "pull-left img-thumbnail" %>
       <div class="media-body">
         <h4 class="media-heading"><%= link_to a.name, authority_path(a) %></h4>
       </div>

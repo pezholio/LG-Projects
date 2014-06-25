@@ -1,10 +1,8 @@
 <div class="row">
-  <div class="col-sm-1">
-    <%= image_tag(@authority.avatar, width: 80, height: 80, alt: @authority.name) %>
+  <div class="pull-left">
+    <%= image_tag @authority.avatar, width: 80, height: 80, alt: @authority.name, class: "img-thumbnail authority-logo" %>
   </div>
-  <div class="col-sm-7" style="margin-left: 10px;">
-    <h1><%= @authority.name || @authority.username %></h1>
-  </div>
+  <h1 id="authority-name"><%= @authority.name || @authority.username %></h1>
 </div>
 
 <div class="row">
