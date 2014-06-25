@@ -33,6 +33,13 @@ describe "import:authorities" do
     repo.description.should == "Licensing"
     repo.url.should == "https://github.com/Lichfield-District-Council/Licensing"
     repo.civic_present?.should == false
+    repo.created.should == DateTime.parse("2012-07-23T14:34:04Z")
+    repo.language.should == "Ruby"
+    repo.commits.should == 20
+    repo.stars.should == 1
+    repo.forks.should == 0
+    repo.issues.should == 0
+    repo.contributors.should == [{"name"=>"pezholio", "url"=>"https://github.com/pezholio", "avatar_url"=>"https://avatars.githubusercontent.com/u/109774?"}]
   end
 
   it "gets the correct additional details for a repo with a civic.json file" do

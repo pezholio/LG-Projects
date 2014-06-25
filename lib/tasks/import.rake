@@ -40,6 +40,13 @@ class Import
       repo.write_attributes(
         description: r['description'],
         url: r['html_url'],
+        created: DateTime.parse(r['created_at']),
+        language: r['language'],
+        commits: get_commit_count(r),
+        stars: r['stargazers_count'],
+        forks: r['forks_count'],
+        issues: r['open_issues_count'],
+        contributors: get_contributors(r),
         civic_present?: (civic.count != 0),
         thumbnail: civic['thumbnailUrl'],
         owner: civic['owner'],
@@ -62,6 +69,28 @@ class Import
       civic = {}
     end
     civic
+  end
+
+  def self.get_commit_count(repo)
+    begin
+      github.repos.commits.all(repo['owner']['login'], repo['name']).count
+    rescue Github::Error::ServiceError
+      nil
+    end
+  end
+
+  def self.get_contributors(repo)
+    begin
+      github.repos.contributors(repo['owner']['login'], repo['name']).map do |c|
+        {
+          name: c['login'],
+          url: c['html_url'],
+          avatar_url: c['avatar_url']
+        }
+      end
+    rescue Github::Error::ServiceError
+      []
+    end
   end
 
   def self.github
