@@ -17,3 +17,11 @@
 .authority-logo {
   margin-right: 10px;
 }
+
+.repos {
+  margin-top: 40px;
+}
+
+.repo h3 {
+  margin-top: 0;
+}

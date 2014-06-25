@@ -1,13 +1,18 @@
-<div class="media repo">
-  <h3><%= link_to repo.name, repo.url %></h3>
+<tr class="repo">
+  <td>
+    <h3><%= link_to repo.name, repo.url %></h3>
+    <%= image_tag repo.thumbnail, height: 100, alt: repo.name, class: "pull-left" unless repo.thumbnail.blank? %>
+    <p><strong>Created:</strong> <%= time_ago_in_words repo.created %> ago</p>
+    <p><strong>Language:</strong> <%= repo.language || "Unknown" %></p>
 
-  <%= image_tag repo.thumbnail, height: 100, alt: repo.name, class: "pull-left" unless repo.thumbnail.blank? %>
+  </td>
 
-  <div class="media-body">
-    <% unless repo.description.blank? %>
-      <p><%= repo.description %></p>
+  <td>
+    <p><%= repo.description %></p>
+    <h4>Contributors</h4>
+    <% repo.contributors.each do |c| %>
+      <%= link_to image_tag(c["avatar_url"] + "s=48", alt: c["name"], width: 48, height: 48, class: "img-thumbnail"), c["url"] %>
     <% end %>
-
     <% if repo.civic_present? %>
       <p><strong>Status:</strong> <span class="label label-primary"><%= repo.status %></span></p>
       <p><strong>Owner:</strong> <span class="label label-success"><%= repo.owner['name'] %></span></p>
@@ -24,7 +29,23 @@
           <% end %>
       </p>
     <% end %>
+  </td>
 
-  </div>
+  <td class="text-center">
+    <%= link_to repo.commits, repo.commit_link, class: "btn btn-info" %>
+  </td>
 
-</div>
+  <td class="text-center">
+    <%= link_to repo.stars, repo.stars_link, class: "btn btn-info" %>
+  </td>
+
+  <td class="text-center">
+    <%= link_to repo.forks, repo.forks_link, class: "btn btn-info" %>
+  </td>
+
+  <td class="text-center">
+    <%= link_to repo.issues, repo.issues_link, class: "btn btn-info" %>
+  </td>
+
+
+</tr>

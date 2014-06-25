@@ -20,4 +20,20 @@ class Repo
   field :technologies, type: Array
 
   belongs_to :authority
+
+  def commit_link
+    "#{url}/commits/master"
+  end
+
+  def stars_link
+    "#{url}/stargazers"
+  end
+
+  def forks_link
+    "#{url}/network"
+  end
+
+  def issues_link
+    "#{url}/issues"
+  end
 end

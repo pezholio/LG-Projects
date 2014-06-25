@@ -7,8 +7,21 @@
 
 <div class="row">
 
-  <% @authority.repos.each do |r| %>
-    <%= render partial: "repo", locals: { repo: r } %>
-  <% end %>
+  <table class="table repos">
+
+    <tr>
+      <th scope="col">Project</th>
+      <th scope="col">Description</th>
+      <th scope="col">Commits</th>
+      <th scope="col">Stars</th>
+      <th scope="col">Forks</th>
+      <th scope="col">Issues</th>
+    </tr>
+
+    <% @authority.repos.each do |r| %>
+      <%= render partial: "repo", locals: { repo: r } %>
+    <% end %>
+
+  </table>
 
 </div>
