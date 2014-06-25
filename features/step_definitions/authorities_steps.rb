@@ -21,7 +21,9 @@ Given(/^that authority has (\d+) repos$/) do |num|
                                     name: "Repo #{n}",
                                     description: "Description for Repo #{n}",
                                     url: "http://www.github.com/test/repo-#{n}",
-                                    civic_present?: false
+                                    civic_present?: false,
+                                    created: DateTime.now - 1.day,
+                                    contributors: []
                                    )
   end
   @authority.save
@@ -41,7 +43,7 @@ end
 
 
 Then(/^I should see (\d+) repos? listed$/) do |num|
-  all('div.repo').count.should == num.to_i
+  all('tr.repo').count.should == num.to_i
 end
 
 Given(/^that authority has a repo called "(.*?)" with additional metadata$/) do |arg1|
@@ -51,6 +53,8 @@ Given(/^that authority has a repo called "(.*?)" with additional metadata$/) do 
                                 url: "http://www.github.com/test/ratemyplace",
                                 civic_present?: true,
                                 thumbnail: "http://www.example.com/nyan-cat.gif",
+                                created: DateTime.now - 1.day,
+                                contributors: [],
                                 status: "Live",
                                 owner: {
                                   'name' => 'Lichfield District Council',
