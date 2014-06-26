@@ -35,6 +35,9 @@ class Import
 
   def self.get_repos(authority)
     github.repos.list(user: authority.username).body.map! do |r|
+      commits = get_commit_count(r)
+      next if commits.nil?
+      
       repo = Repo.find_or_initialize_by(name: r['name'])
       civic = get_civic(authority.username, r['name'])
       repo.write_attributes(
@@ -42,7 +45,7 @@ class Import
         url: r['html_url'],
         created: DateTime.parse(r['created_at']),
         language: r['language'],
-        commits: get_commit_count(r),
+        commits: commits,
         stars: r['stargazers_count'],
         forks: r['forks_count'],
         issues: r['open_issues_count'],
