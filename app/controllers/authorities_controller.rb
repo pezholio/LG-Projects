@@ -1,7 +1,7 @@
 class AuthoritiesController < ApplicationController
 
   def index
-    @authorities = Authority.all
+    @authorities = Authority.all.order_by(:name.asc)
   end
 
   def show
